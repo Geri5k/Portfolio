@@ -107,6 +107,11 @@ section { /** Ausrichtung **/
     width: 90%;
 }
 
+article {
+    width: 90%;
+    box-sizing: border-box;
+}
+
 
 /**                                                   Footer                                  **/
 
