@@ -1,4 +1,4 @@
-
+/**                                             Body und Background                             **/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(248, 248, 248);
@@ -15,19 +15,7 @@ body {
 
 }
 
-section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-
-    max-width: 1000px;
-    margin:  0 auto;
-    width: 90%;
-}
-
-/**                         dunkler Film               **/
-body::before {
+body::before { /** dunkler Film  **/
     content: "";
     position: fixed;
     height: 100%;
@@ -39,7 +27,7 @@ body::before {
     z-index: -1;
 }
 
-/**                             Hero Beriech                **/
+/**                                       Hero Beriech                                 **/
 #self {
     height: 200px;
     width: auto;
@@ -60,8 +48,9 @@ body::before {
     align-items: center;
 }
 
-/**                         form für sectionen                **/
-.karte {
+/**                                               Main                       **/
+
+.karte {  /** Kartenform **/
     margin-top: 30px; 
     padding: 10px;
 
@@ -74,4 +63,43 @@ body::before {
     border-radius: 20px;
     
     transition: 0.5s ease;
+}
+
+section { /** Ausrichtung **/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 1000px;
+    margin:  0 auto;
+    width: 90%;
+}
+
+
+/**                                                   Footer                                  **/
+
+#kontakt {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#kontakt a:hover{
+    text-decoration: underline;
+    transform: translateX(10px)
+}
+
+#kontakt a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    transition: 0.3s;
 }
