@@ -60,7 +60,7 @@ body::before { /** dunkler Film  **/
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 50% 50% 40% 60% / 60% 50% 50% 40%;
     display: flex;       
     justify-content: center;
     align-items: center;
@@ -121,6 +121,15 @@ article {
     box-sizing: border-box;
 }
 
+article a {
+    text-decoration: none;
+    color: #3eedf7;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
 
 /**                                                   Footer                                  **/
 
@@ -137,8 +146,8 @@ article {
 
 #kontakt a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
+    color: rgb(170, 170, 170);
+    border-radius: 50% 50% 40% 60% / 60% 50% 50% 40%;
     display: flex;       
     justify-content: center;
     align-items: center;
