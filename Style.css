@@ -101,6 +101,15 @@ h2 {
     min-height: 70vh;
     border-radius: 20px;
     transition: 0.5s ease;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.karte.sichtbar {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .karte1 { /** Karten farbverlauf **/
@@ -174,10 +183,9 @@ article a:hover {
     max-width: 30%;
 }
 
-/**                         JS verbindung                   **/
+/**                         JS kontrolle                   **/
 
 #ankerH a.active {
-    color: red;
     font-weight: bold;
 }
 

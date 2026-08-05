@@ -25,3 +25,17 @@ let observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => {
     observer.observe(section);
 });
+
+let karten = document.querySelectorAll(".karte");
+
+let karteObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("sichtbar");
+        }
+    });
+});
+
+karten.forEach((karte) => {
+    karteObserver.observe(karte);
+});
