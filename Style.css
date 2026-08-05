@@ -57,7 +57,7 @@ body::before { /** dunkler Film  **/
     align-items: center;
 }
 
-nav a {
+#ankerH a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     border-radius: 50% 50% 40% 60% / 60% 50% 50% 40%;
@@ -70,11 +70,11 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hover {
+#ankerH a:hover {
     transform: translateX(10px)
 }
 
-nav {
+#ankerH {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -150,11 +150,11 @@ article a:hover {
     flex-wrap: wrap;
 }
 
-#kontakt a:hover{
+#ankerF a:hover{
     transform: translateX(10px)
 }
 
-#kontakt a {
+#ankerF a {
     text-decoration: none;
     color: rgb(170, 170, 170);
     border-radius: 50% 50% 40% 60% / 60% 50% 50% 40%;
@@ -165,4 +165,49 @@ article a:hover {
     border: 1px solid #ddd;
     margin: 20px;
     transition: 0.3s;
+}
+
+#ankerF {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 30%;
+}
+
+/**                     Media Quaries                       **/
+
+@media (max-width: 768px) {
+
+    .heroText {
+        flex-direction: column;
+    }
+
+    section {
+        font-size: 0.9rem;
+
+    }
+
+    #kontakt {
+        flex-direction: column;
+    }
+
+    #ankerF {
+        max-width: 100%;
+    }
+
+    #ankerF a {
+        min-width: auto;
+        flex: 1 1 auto;
+    }
+
+    #ankerH {
+    
+        max-width: 100%;
+    }
+
+    #ankerH a {
+        min-width: auto;
+        flex: 1 1 auto;
+}
+
 }
