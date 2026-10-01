@@ -17,6 +17,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100dvh;
     min-height: 100vh;
 
 }
@@ -199,6 +200,10 @@ article a:hover {
 /**                     Media Quaries                       **/
 
 @media (max-width: 768px) {
+
+    h2 {
+        font-size: 32px;
+    }
 
     .heroText {
         flex-direction: column;
