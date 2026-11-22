@@ -1,4 +1,4 @@
-wlet datum = new Date();
+let datum = new Date();
 let jahr = datum.getFullYear();
 document.getElementById("jahr").textContent = jahr;
 
